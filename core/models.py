@@ -16,8 +16,11 @@ class Consumer(models.Model):
 """Fields:
 -> Consumer type  
 -> Consumption range
--> Cover
--> discount value
+-> Cover value
+-> Discount value
 The first three fields should be a select with the values provided in the table
 defined in the readme of the repository. Discount should be numerical
 """
+
+# TODO: You must populate the consumer table with the data provided in a sheet
+#  and associate each one with the correct discount rule
