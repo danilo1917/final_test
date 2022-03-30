@@ -8,7 +8,8 @@ class Consumer(models.Model):
     document = models.CharField("Documento(CPF/CNPJ)", max_length=14, unique=True)
     city = models.CharField("Cidade", max_length=128)
     state = models.CharField("Estado", max_length=128)
-    consumption = models.IntegerField("Consumo(kWh)")
+    consumption = models.IntegerField("Consumo(kWh)", blank=True, null=True)
+    distributor_tax = models.FloatField("Tarifa da Distribuidora", blank=True, null=True)
     #  create the foreign key for discount rule model here
 
 
